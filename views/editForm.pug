@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    link(rel="stylesheet", href="http://127.0.0.1:5500/css/style.css")
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="webTitle" >
+        <p>ResuMaker</p>
+        <hr>
+    </div>
+    <div class="container">
+        
+        <form action="/editUser" method="post">
+            <div class="row">
+                <div class="col">
+                    <p class="formTitle">Personal Information</p>
+                    <div class="row">
+                        <label for="firstName">First Name:</label>
+                        <input id="firstName" type="text" class="textBox" name="fName" value=#{user.firstName}>
+                    </div>
+                    <div class="row">
+                        <label for="lastName">Last Name:</label>
+                        <input id="lastName" type="text" class="textBox" name="lName" value=#{user.lastName}>
+                    </div>
+                    <div class="row">
+                        <label for="email">Email:</label>
+                        <input id="email" type="text" class="textBox" name="email" value=#{user.email}>
+                    </div>
+                    <div class="row">
+                        <label for="phoneNO">Phone no:</label>
+                        <input id="phoneNO" type="number" class="textBox" name="phoneNO" value=#{user.phoneNO}>
+                    </div>
+                    <div class="row">
+                        <label for="password">Password: </label>
+                        <input id="password" type="text" class="textBox" name="password" placeholder="Enter your current password">
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <p class="formTitle">Professional Information</p>
+                    
+                    <div class="row" id="exprDiv" style="align-items: center;"> 
+                        <label>Experience:</label>
+                        <div class="row">
+                            <input type="text" class="textBox" name="expr" >
+                        </div>                       
+                    </div>
+                    <div class="row">
+                        <input type="button" class="button addBtn" id="exprAdd" value="+Add">
+                    </div>
+
+
+                    <div class="row" id="eduDiv" style="align-items: center;"> 
+                        <label>Education:</label>
+                        <div class="row">
+                            <input type="text" class="textBox" name="edu">
+                        </div>                       
+                    </div>
+                    <div class="row">
+                        <input type="button" class="button addBtn" id="eduAdd" value="+Add">
+                    </div>
+
+                    <div class="row" id="skillDiv" style="align-items: center;"> 
+                        <label>Skills:</label>
+                        <div class="row">
+                            <input type="text" class="textBox" name="skill">
+                        </div>                       
+                    </div>
+                    <div class="row">
+                        <input type="button" class="button addBtn" id="skillAdd" value="+Add">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row submitBtn" style="justify-content: center;">
+                <button type="submit" id="submit" class="button">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+<script src="http://127.0.0.1:5500/js/index.js"></script>
+</html>

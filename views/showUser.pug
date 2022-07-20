@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    link(rel="stylesheet", href="http://127.0.0.1:5500/css/resume.css")
+</head>
+<body>
+    div(class="header")   
+        h1(class="name") #{user[0].firstName} #{user[0].lastName}
+    p(style="font-size: 20px") [Email: #{user[0].email} Phone: #{user[0].phoneNO}]
+    <br>
+    <h2>Work Experience</h2>
+    <hr>
+    <ul>
+        each val in user[0].experience.length ? user[0].experience : ["No values"]
+            li=val
+    </ul>
+    
+    <h2>Education</h2>
+    <hr>
+    <ul>
+        each val in user[0].education.length ? user[0].education : ["No values"]
+            li=val
+    </ul>
+    <h2>Skills</h2>
+    <hr>
+    <ul>
+        each val in user[0].skill.length ? user[0].skill : ["No values"]
+            li=val
+    </ul>
+    <button type="button" onclick="window.print();">Print</button>
+    <a href="/editRedirect">
+        <button type="button">Edit</button>
+    </a>
+    <a href="/">
+        <button type="button">Log out</button>
+    </a>
+</body>
+</html>

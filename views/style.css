@@ -1,0 +1,97 @@
+body{
+    background-color: #D1E3DD;
+    color: #083629;
+}
+hr{
+    height: 3px !important;
+    opacity: 20%;
+}
+
+
+
+.button{
+    background-color: #37515F;
+    border: 0px;
+    color: white;
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 100px;
+}
+.button:hover{
+    background-color: #995D81;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgb(133, 172, 172);
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #37515F;
+    border-radius: 30px;
+}
+
+
+.formTitle{
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px;
+    font-size: 25px;
+}
+
+
+.webTitle{
+    align-items: center;
+    text-align: center;
+
+}
+
+.textBox{
+    width: 300px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+
+#submit{
+    width: 80px;
+    text-align: center;
+}
+
+
+.addBtn{
+    width: 75px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+.submitBtn{
+    margin-top: 20px;
+}
+
+
+.login{
+    min-height: 500px;
+}
+#error{
+    color:red;
+}
+.getStartedDiv{
+    text-align: center;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    background: url(./createresume.webp);
+    border-radius: 20px;
+}
+.getStartedText{
+    background-color: #D1E3DD !important;
+    width: 600px;
+    height: 100px;
+    border-radius: 20px;
+}
+.getStarted{
+    width: 150px;
+}

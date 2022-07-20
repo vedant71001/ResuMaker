@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/css/style.css">
+</head>
+<body>
+    <div class="webTitle" >
+        <p>ResuMaker</p>
+        <hr>
+    </div>
+    <div class="container login">
+        <div class="getStartedDiv">
+            <div class="container getStartedText">
+                <div class="row">
+                    <h3>Build your Resume very easily with UI.</h3>
+                </div>
+                <div class="row">
+                    <a href="#login"><button type="button" class="getStarted button">Get Started</button></a>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="row">
+            <div class="row" id="login" style="min-height: 500px;">
+                <div class="col">
+                    <p class="formTitle">New to ResuMaker?</p>
+                    <a href="/register">
+                        <button type="button" class="button">Register</button>
+                    </a>
+                </div>
+                <div class="col">
+                    <form action="/authenticate" method="post">
+                        <div class="row">
+                            h2(class="formTitle")   Login
+                        </div>
+                        <p id="error">Invalid User!</p>
+                        <div class="row">
+                            <label for="phoneNO">Phone: </label><br>
+                            <input type="number" name="phoneNO" id="phoneNO" class="textBox"><br>
+                        </div>
+                        <div class="row">
+                            <label for="password">Password: </label><br>
+                            <input type="password" name="password" id="password" class="textBox"><br><br>
+                        </div>
+                        
+                        
+                        
+                        <button class="button" type="submit">Login</button>
+                    </form>
+                </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
